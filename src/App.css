@@ -1,38 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
+  background-image: url('./img/clouds_bg.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+  transform: translateY(150%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#usr-search {
+  width: 250px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.current-weather {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: auto;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  transform: translateY(25%);
+  height: 300px;
+  width: 400px;
+  border: 1px solid;
+  border-color: rgba(0,0,0,0.1);
+  border-radius: 0.75rem;
+  background-color: rgba(150,150,150,0.1);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  padding: 20px;
+
+  text-align: left;
 }
 
-.App-link {
-  color: #61dafb;
+.weather-info {
+  margin-left: 350px;
+  transform: translate(-55px,-30%);
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+  height: 200px;
+  width: 200px;
+  transform: translate(-120%, 170px);
+}
+
+input {
+  padding: 10px;
+  background: none;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  border-radius: 0.75rem;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+
+p {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+h1 {
+  margin-bottom: 5px;
+  font-size: 35px;
+}
+
+#search-btn {
+  cursor: pointer;
+  transition: 0.75s ease;
+  padding: 10px;
+  border-radius: 0.75rem;
+  background: none;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 14 px;
+}
+
+#search-btn:hover {
+  transform: scale(1.5);
 }
